@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --bg: #fffffa;
+  --textColor: black;
+  --softBg: #f0f0f0;
+  --softTextColor: #626262;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100vw;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.dark {
+  --bg: #0f172a;
+  --textColor: #ddd;
+  --softBg: #1f273a;
+  --softTextColor: #a6a6a6;
+}
+
+.light {
+  --bg: white;
+  --textColor: black;
+  --softBg: #f0f0f0;
+  --softTextColor: #626262;
+}
+
+.container {
+  min-height: 100vh;
+  max-width: 100vw;
+  background-color: var(--bg);
+  color: var(--textColor);
+}
+.max-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.text_info {
+  margin: 0 auto;
+}
+
+.wrapper {
+}
+.setcol:focus {
+  color: #593d88;
+}
+.aspect_ratio {
+  aspect-ratio: 1/1;
+}
+.sm_width {
+  max-width: 640px;
+  margin: 0 auto;
+}
+.md_width {
+  max-width: 768px;
+  margin: 0 auto;
+}
+.md_button {
+  background-color: blue;
+}
+
+/*@media screen and (max-width: 680px) {
+  . {
+    max-width: 1366px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .wrapper {
+    max-width: 1024px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    max-width: 768px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrapper {
+    max-width: 640px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .wrapper {
+    max-width: 475px;
+  }
+}*/
+
+.ql-container {
+  font-size: 28px !important;
+}
+
+.quill > .ql-container > .ql-editor.ql-blank::before {
+  color: #b3b3b1;
+}
+.hover-scale {
+  display: block;
+  transition: transform 1s ease; /* Smooth transition */
+}
+.hover-scale:hover {
+  transform: scale(1.1); /* Scale up the image on hover */
+}
